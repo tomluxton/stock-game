@@ -27,6 +27,11 @@ function Navigation() {
                   Portfolio
                 </NavLink>
               </li>
+              <li className="nav-item">
+                <NavLink className="nav-link" to="/marketplace">
+                  Marketplace
+                </NavLink>
+              </li>
             </ul>
           </div>
         </div>

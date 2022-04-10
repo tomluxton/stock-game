@@ -9,7 +9,7 @@ import {
   Home,
   About,
   Portfolio,
-  //Contact,
+  Marketplace,
   //Blog,
   //Posts,
   //Post,
@@ -23,6 +23,7 @@ root.render(
       <Route path="/" element={<Home />} />
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
+      <Route path="/marketplace" element={<Marketplace />} />
     </Routes>
     <Footer />
   </Router>,  
