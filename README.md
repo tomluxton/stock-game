@@ -1,3 +1,6 @@
+![image](https://user-images.githubusercontent.com/30231300/162681326-f62dcedd-e355-437f-a920-3b53ac23bcfe.png)
+A stock market game where you can buy and sell fake stocks
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
