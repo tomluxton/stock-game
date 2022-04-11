@@ -1,17 +1,66 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
 
+import {
+  Chart as ChartJS,
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend,
+} from 'chart.js';
+import { Line } from 'react-chartjs-2';
+
+ChartJS.register(
+  CategoryScale,
+  LinearScale,
+  PointElement,
+  LineElement,
+  Title,
+  Tooltip,
+  Legend
+);
+
+export const options = {
+  responsive: true,
+  plugins: {
+    title: {
+      display: true,
+      text: 'Chart.js Line Chart',
+    },
+  },
+};
+
+const xyValues = [
+  {x:'January', y:50},
+  {x:'February', y:55},
+  {x:'March', y:75},
+  {x:'April', y:125},
+  {x:'May', y:150},
+  {x:'June', y:100},
+  {x:'July', y:150},
+];
+
+export const data = {
+  datasets: [
+    {
+      label: 'SnP500',
+      data: xyValues,
+      borderColor: 'rgb(255,99,132)',
+      backgroundColor: 'rgba(255,99,132,0.5)',
+    },
+  ],
+};
+
 function Marketplace() {
   return (
     <div className="Marketplace">
       <div className="container">
         <div className="row align-items-center my-5">
           <div className="col-lg-7">
-            <img
-              className="img-fluid rounded mb-4 mb-lg-0"
-              src="http://placehold.it/900x400"
-              alt=""
-            />
+            <Line options={options} data={data} />
           </div>
           <div className="col-lg-5">
             <h1 className="font-weight-light">Marketplace</h1>
