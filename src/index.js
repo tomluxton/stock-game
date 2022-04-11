@@ -10,6 +10,7 @@ import {
   About,
   Portfolio,
   Marketplace,
+  Stock1
   //Blog,
   //Posts,
   //Post,
@@ -24,6 +25,7 @@ root.render(
       <Route path="/about" element={<About />} />
       <Route path="/portfolio" element={<Portfolio />} />
       <Route path="/marketplace" element={<Marketplace />} />
+      <Route path="/marketplace/stock1" element={<Stock1 />} />
     </Routes>
     <Footer />
   </Router>,  

@@ -1,4 +1,5 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
 function Marketplace() {
   return (
@@ -18,6 +19,13 @@ function Marketplace() {
               This is where you can buy and sell stocks.
             </p>
           </div>
+        </div>
+        <div class="row">
+        <div class="col-sm">
+          <NavLink className="nav-link" to = "/marketplace/stock1">Stock 1</NavLink>
+        </div>
+        <div class="col-sm">Stock 2</div>
+        <div class="col-sm">Stock 3</div>
         </div>
       </div>
     </div>
