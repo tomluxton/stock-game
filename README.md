@@ -1,5 +1,8 @@
+# A stock market game where you can buy and sell fake stocks
+
 ![image](https://user-images.githubusercontent.com/30231300/162681326-f62dcedd-e355-437f-a920-3b53ac23bcfe.png)
-A stock market game where you can buy and sell fake stocks
+
+Made with React
 
 # Getting Started with Create React App
 
